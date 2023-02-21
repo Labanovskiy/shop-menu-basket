@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burgers shop</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <img src="./img/logo.svg" alt="logo-burger" class="logo">
+        <h1 class="title">Delivery of burgers</h1>
+        <p>Fast and tasty</p>
+    </header>
+    <!-- HEADER END-->
+    <div class="container">
+        <div class="row">
+             <!-- CARDS -->
+            <div class="column-cards">
+                <div class="card" data-id="01">
+                    <div class="card-img">
+                        <img class="product-img" src="./img/1-Hamburger.jpg" alt="hamburger" width="350px">
+                    </div>
+                    <div class="card-text">
+                        <h2 class="item-titile">Hamburger</h2>
+                    </div>
+                    <div class="card-details">
+                        <div class="items-wrapper">
+                            <div class="items-control-l" data-action="minus">-</div>
+                            <div class="items-current" data-counter>1</div>
+                            <div class="items-control-r"data-action="plus">+</div>
+                        </div>
+                        <div class="price">
+                            <div class="price-weight">96g</div>
+                            <div class="price-currency">49 UAH</div>
+                        </div>
+                    </div>
+                    <button data-card class="btn">+ in the basket</button>
+                </div>
+
+                <div class="card" data-id="02">
+                    <div class="card-img">
+                        <img class="product-img" src="./img/2-Cheeseburger.jpg" alt="Cheeseburger" width="350px">
+                    </div>
+                    <div class="card-text">
+                        <h2 class="item-titile">Cheeseburger</h2>
+                    </div>
+                    <div class="card-details">
+                        <div class="items-wrapper">
+                            <div class="items-control-l" data-action="minus">-</div>
+                            <div class="items-current" data-counter>1</div>
+                            <div class="items-control-r"data-action="plus">+</div>
+                        </div>
+                        <div class="price">
+                            <div class="price-weight">109g</div>
+                            <div class="price-currency">57 UAH</div>
+                        </div>
+                    </div>
+                    <button data-card class="btn">+ in the basket</button>
+                </div>
+
+                <div class="card" data-id="03">
+                    <div class="card-img">
+                        <img class="product-img" src="./img/4-Big-mak.jpg" alt="Double-Ches" width="350px" class="img">
+                    </div>
+                    <div class="card-text">
+                        <h2 class="item-titile">Double Cheeseburger</h2>
+                    </div>
+                    <div class="card-details">
+                        <div class="items-wrapper">
+                            <div class="items-control-l" data-action="minus">-</div>
+                            <div class="items-current" data-counter>1</div>
+                            <div class="items-control-r"data-action="plus">+</div>
+                        </div>
+                        <div class="price">
+                            <div class="price-weight">153g</div>
+                            <div class="price-currency">61 UAH</div>
+                        </div>
+                    </div>
+                    <button data-card class="btn">+ in the basket</button>
+                </div>
+
+                <div class="card" data-id="04">
+                    <div class="card-img">
+                        <img class="product-img" src="./img/3-McChicken.jpg" alt="Big-tasty" width="350px">
+                    </div>
+                    <div class="card-text">
+                        <h2 class="item-titile">Big Tasty</h2>
+                    </div>
+                    <div class="card-details">
+                        <div class="items-wrapper">
+                            <div class="items-control-l" data-action="minus">-</div>
+                            <div class="items-current" data-counter>1</div>
+                            <div class="items-control-r"data-action="plus">+</div>
+                        </div>
+                        <div class="price">
+                            <div class="price-weight">324g</div>
+                            <div class="price-currency">112 UAH</div>
+                        </div>
+                    </div>
+                    <button data-card class="btn">+ in the basket</button>
+                </div>
+            </div>
+             <!-- CARDS END-->
+
+             <!-- BASKET -->
+            <div class="column-order">
+                <div class="basket-body">
+                    <h3 class="basket-title">Your order</h3>
+                    <div class="basket-empty">Your basket is empty</div>
+
+                    <div class="card-wrapper">
+                        
+                    </div>
+
+                    <div class="total">
+                        <p><span class="delivery">Delivery:</span><span class="free">Free</span></p>
+                        <p><span class="total-name">Total:</span><span class="total-sum">0</span><span class="UAH">UAH</span></p>
+                    </div>
+                </div>
+                <div class="submit-order none">
+                    <h4 class="title-submit">To order</h4>
+                    <form>
+                        <div class="form-phone">
+                            <input type="text" placeholder="Your phone number" class="form-phone-input">
+                        </div>
+                        <button type="submit" class="btn-submit">Order</button>
+                    </form>
+                </div>
+            </div>
+            <!-- BASKET END-->
+        </div>
+    </div>
+    <script src="./js/cart.js"></script>
+    <script src="./js/counter.js"></script>
+</body>
+</html>
